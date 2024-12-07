@@ -34,7 +34,7 @@ public class DataParser {
 
             for (int i = 0; i < jsonArray.size(); i++) {
                 JsonObject jsonObject = jsonArray.get(i).getAsJsonObject();
-                System.out.println(dataType.substring(0, 1).toUpperCase() + dataType.substring(1) + " " + (i + 1) + ":");
+                System.out.println(dataType + " " + (i + 1) + ":");
                 for (Map.Entry<String, ?> entry : jsonObject.entrySet()) {
                     System.out.println("  " + entry.getKey() + ": " + entry.getValue());
                 }
